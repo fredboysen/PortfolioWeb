@@ -1,0 +1,199 @@
+
+/* Margin and padding 0 so that the header fits to top of window without space between, same with box-sizing to that the navbar fits on the screen*/
+/* textdecoration none so that there are no underline under the text in navbar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+
+/*  adding background color in a gradient to make it more appealing*/
+body{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-attachment: fixed;
+}
+
+/* Controlling the width and sizing of the header as well as making it fit to top of screen, applying the same background gradiant to make it as the background */
+.header{
+    position: sticky;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+/* text sizing and color for the text that appear in navbar*/
+.navigation {
+    font-size: 25px;
+    color: beige;
+    font-weight: 600;
+    margin-left: 50px;
+
+}
+
+/* Controlling font-size of navbar items aswell as color and sizing*/ 
+.navbar a {
+font-size: 20px;
+color: bisque;
+font-weight: 600;
+margin-left: 40px;
+text-align: center;
+
+}
+
+/* Controlling the sizes of the navbar icons borrowed from font-awesome */
+.navbar i {
+    font-size: 25px;
+ 
+    }
+
+/* Making a hover feature when hovering with mouse over navbar so that the color changes after .5s of hovering */ 
+
+.navbar :hover {
+    color: black;
+    transition: .5s;
+}
+
+/* Alligning all content to center*/
+.content-front {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+
+/* Controlling position of headshot picture and removing borders to make the picture appear rounded*/
+#hs{
+    height: 400px;
+    width: auto;
+    position: fixed;
+    border-radius: 50%;
+    margin-top: -12%;
+    margin-left: 150px;
+}
+
+
+#welcome {
+    color: bisque;
+    margin-top: 15%;
+    font-size: 200%;
+    font-family: sans-serif;   
+    
+}
+/* Controlling color and position of content shown on frontpage */ 
+
+#welcome h1 {
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+#welcome h2 {
+    margin-bottom: 10px;
+    font-size: 100%;
+
+}
+
+#welcome p {
+    font-size: 75%;
+}
+
+/* Changing the colors of the icons to bisque*/
+.fa-github, .fa-linkedin{
+    color: bisque;
+}
+
+
+
+
+.vialogo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#mapVIA {
+float: right;
+margin-top: -500px;
+width: 40%;
+height: auto;
+}
+
+
+
+.content-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 100px; 
+}
+
+
+
+
+/* adjusting sizing, colors and positions of content on Portfolio and Education page*/
+.job-container, .course-container, .projects, .skills, .Educationcontent {
+    padding: 10px;
+    width: 40%;
+    padding: 10px;
+    color: bisque;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.job-container img, .course-container img, .projects img, .skills img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.job-container h2, .course-container h2, .projects h3, .skills h3 {
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.Educationcontent h2 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.Educationcontent ul {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.job-container p, .course-container p, .projects p, .skills p, .Educationcontent p {
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.job-container h1, .course-container h1, .projects h1 {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Adjusting top margin for download field*/
+.skills h1 {
+    margin-top: 30px;
+    text-decoration: underline;
+
+}
+
